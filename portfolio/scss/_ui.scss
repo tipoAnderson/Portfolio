@@ -1,0 +1,77 @@
+.title {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 80px;
+    color: var(--theme-color-title, #BDAE82);
+    text-align: center;
+    margin-bottom: 60px;
+
+    @media (max-width: 769px) {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 64px;
+    }
+
+    &:before {
+        content: '';
+        width: 274px;
+        height: 2px;
+        display: inline-block;
+        margin: 0 20px 13px 0;
+        background: var(--theme-color-title, #BDAE82);
+
+        @media (max-width: 769px) {
+            width: 118px;
+            margin-bottom: 11px;
+        }
+
+        @media (max-width: 390px) {
+            width: 50px;
+        }
+    }
+
+    &::after {
+        content: '';
+        width: 274px;
+        height: 2px;
+        margin: 0 0 13px 20px;
+        display: inline-block;
+        background-color: var(--theme-color-title, #BDAE82);
+
+        @media (max-width: 769px) {
+            width: 118px;
+            margin-bottom: 11px;
+        }
+
+        @media (max-width: 390px) {
+            width: 50px;
+        }
+    }
+}
+
+button {
+    background-color: rgba($color: #000000, $alpha: 0);
+}
+
+.btn {
+    display: inline-block;
+    width: 220px;
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 51px;
+    text-align: center;
+    color: var(--theme-color-title, #BDAE82);
+    border: 2px solid #BDAE82;
+    transition-duration: 0.5s;
+
+    &:hover {
+        color: #fff;
+    }
+
+    &_act {
+        background-color: #BDAE82;
+        color: #000;
+    }
+}

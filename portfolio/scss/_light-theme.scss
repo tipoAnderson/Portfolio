@@ -1,0 +1,26 @@
+.light-theme {
+    background-color: #fff;
+}
+
+.light-btn {
+    display: inline-block;
+    width: 220px;
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 51px;
+    text-align: center;
+    background-color: #BDAE82;
+    color: var(--theme-color-title, #BDAE82);
+    border: 2px solid #BDAE82;
+    transition-duration: 0.5s;
+
+    &:hover {
+        color: #fff;
+    }
+
+    &_act {
+        border: 2px solid #000;
+        background-color: #000;
+        color: #fff;
+    }
+}
